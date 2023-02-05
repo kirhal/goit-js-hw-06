@@ -6,13 +6,13 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-const list = document.querySelector("#ingredients");
+const listEl = document.querySelector("#ingredients");
 
-const listArray = ingredients.map((ingredient) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = ingredient;
-  listItem.className = "item";
-  return listItem;
+const newIngredientsArray = ingredients.map((ingredient) => {
+  const listItemEl = document.createElement("li");
+  listItemEl.textContent = ingredient;
+  listItemEl.className = "item";
+  return listItemEl;
 });
 
-list.append(...listArray);
+listEl.append(...newIngredientsArray);

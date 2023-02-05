@@ -13,10 +13,10 @@ const images = [
   },
 ];
 
-const list = document.querySelector(".gallery");
+const listEl = document.querySelector(".gallery");
 
 const imgArray = images
   .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></img></li>`)
   .join("");
 
-list.insertAdjacentHTML("afterbegin", imgArray);
+listEl.insertAdjacentHTML("afterbegin", imgArray);
